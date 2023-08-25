@@ -1,0 +1,21 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    background: aquamarine;
+    border: green;
+    color: green;
+    min-width: 200px;
+    max-width: 50%;
+    height: 20%;
+}
+
+h1 {
+    color: #333;
+}
