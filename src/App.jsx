@@ -4,6 +4,9 @@ import './helpers/Sold.js';
 import sold from "./helpers/Sold.js";
 import Import from "./helpers/Import.js";
 import AboutToSell from "./helpers/AboutToSell.js";
+import {bestSellingTv} from "./constants/inventory.js";
+import NameProduct from "./helpers/NameProduct.js";
+import Price from "./helpers/Price.js";
 
 function App() {
 
@@ -26,6 +29,12 @@ function App() {
                         <h5>{AboutToSell()}</h5>
                     </div>
                 </div>
+
+              <div className="bestProduct">
+                  <p>{NameProduct()}</p>
+              </div>
+              <p>{Price()}</p>
+
           </div>
       </body>
   )
