@@ -3,17 +3,27 @@
 body {
     font-family: Arial, sans-serif;
     background-color: white;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
 }
 
-div {
+div.flex-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10%;
+}
+
+div.sold {
+    flex: 1;
+    padding: 1%;
     background: aquamarine;
-    border: green;
+    border: 1px solid green;
     color: green;
     min-width: 200px;
-    max-width: 50%;
-    height: 20%;
+    max-width: 33%;
+    min-height: 200px;
+
+
 }
 
 h1 {
