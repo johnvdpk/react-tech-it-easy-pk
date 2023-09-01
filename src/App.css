@@ -3,19 +3,50 @@
 body {
     font-family: Arial, sans-serif;
     background-color: white;
-    margin: 0;
-    padding: 0;
+    margin: 20px;
+    padding: 20px;
 }
 
-div {
-    background: aquamarine;
-    border: green;
-    color: green;
-    min-width: 200px;
-    max-width: 50%;
-    height: 20%;
+div.wrapper {
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-h1 {
-    color: #333;
+div.flex-container {
+    display: flex;
+    width: 800px;
+    min-height: 400px;
+    justify-content: space-between;
+
 }
+
+div.box{
+
+    width: 29%;
+    height: 29%;
+    text-align: center;
+}
+
+div.left {
+
+    background-color: #ddfbf6;
+    color: #8acbc2;
+    border: 1px solid #8acbc2;
+}
+
+div.middle {
+
+    background-color: #f1f6f9;
+    color: #8bb1c0;
+    border: 1px solid #8bb1c0;
+}
+
+div.right {
+
+    background-color: #fdf0ec;
+    color: #ea795e;
+    border: 1px solid #ea795e;
+}
+
+
+
