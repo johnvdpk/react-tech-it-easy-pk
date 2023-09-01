@@ -1,6 +1,6 @@
 /* styles.css */
 
-body {
+div.ipvbody {
     font-family: Arial, sans-serif;
     background-color: white;
     margin: 10px;
@@ -10,7 +10,8 @@ body {
 div.flex-container {
     display: flex;
     justify-content: space-between;
-    padding: 10%;
+    width: 800px;
+    min-height: 400px;
 }
 
 div.sold {
@@ -22,10 +23,69 @@ div.sold {
     min-width: 200px;
     max-width: 33%;
     min-height: 200px;
+    margin: 20px;
+    padding: 20px;
+}
 
+div.wrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+div.box {
+    width: 29%;
+    height: 29%;
+    text-align: center;
+}
+
+div.left {
+    background-color: #ddfbf6;
+    color: #8acbc2;
+    border: 1px solid #8acbc2;
+}
+
+div.middle {
+    background-color: #f1f6f9;
+    color: #8bb1c0;
+    border: 1px solid #8bb1c0;
+}
+
+div.right {
+    background-color: #fdf0ec;
+    color: #ea795e;
+    border: 1px solid #ea795e;
+}
+
+div.flex-container2 {
+    display: flex;
+    border: solid 1px black;
+    padding: 20px;
+    width: 800px;
 
 }
 
-h1 {
-    color: #333;
+div.bestProduct {
+    width: 300px;
+}
+
+div.bestsellingTVinfo {
+    width: 400px;
+}
+
+
+/*/////////////////// img /////////////////////*/
+
+img.bestsellingTV {
+    width: 250px;
+}
+
+/*/////////////////// buttons /////////////////////*/
+
+button {
+    margin-top: 20px;
+    margin-right: 50px;
+    padding: 5px;
+    background: #8bb1c0;
+    border: 1px solid black;
+
 }

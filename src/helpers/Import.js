@@ -12,4 +12,3 @@ function Import() {
 }
 
 export default Import;
-
