@@ -10,7 +10,7 @@ import Test from "./constants/practice.js";
 function App() {
 
   return (
-      <body>
+
     <h1>Begin hier met met maken van de applicatie!</h1>
 
     <div className="flex-container">
