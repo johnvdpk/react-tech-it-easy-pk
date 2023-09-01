@@ -8,4 +8,4 @@ function Price() {
 
 }
 
-export default price;
+export default Price;
