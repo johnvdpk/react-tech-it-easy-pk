@@ -4,6 +4,8 @@ import './helpers/Sold.js';
 import sold from "./helpers/Sold.js";
 import Import from "./helpers/Import.js";
 import AboutToBuy from "./helpers/AboutToBuy.js";
+import {inventory} from "./constants/inventory.js";
+import Test from "./constants/practice.js";
 
 function App() {
 
