@@ -8,6 +8,8 @@ import NameProduct from "./helpers/NameProduct.js";
 import Price from "./helpers/Price.js";
 import {ScreenSizes} from "./helpers/Screen.js";
 import {bestSellingTv} from "./constants/inventory.js";
+import Test from "./constants/practice.js";
+import Testb from "./constants/practice2.js";
 
 function App() {
     return (
@@ -19,7 +21,7 @@ function App() {
             <h3>Verkoop overzicht</h3>
             <div className="flex-container">
                 <div className="box left">
-                    <h5>Aantal verkochte TV's</h5>
+                    <h5>Aantal verkochte TVs</h5>
                     <h5>{sold()}</h5>
                 </div>
                 <div className="box middle">
@@ -27,7 +29,7 @@ function App() {
                     <h5>{Import()}</h5>
                 </div>
                 <div className="box right">
-                    <h5>Aantal verkochte TV's</h5>
+                    <h5>Aantal verkochte TVs</h5>
                     <h5>{AboutToSell()}</h5>
                 </div>
             </div>
@@ -46,6 +48,19 @@ function App() {
             <button onClick={() => console.log('Geklikt op meest verkocht')}>Meest verkocht eerst</button>
             <button onClick={() => console.log('Geklikt op goekoopste eerst!')}>Goedkoopste eerst</button>
             <button onClick={() => console.log('Geklikt op geschikt voor sport')}>Meest geschikt voor sport eerst</button>
+
+            <p>alle tvs</p>
+            <p>{Test()}</p>
+            <p></p>
+            <p>{Testb()}</p>
+            <div className="opsomming">
+
+
+
+
+            </div>
+
+
         </div>
     </div>
 

@@ -1,7 +1,6 @@
 import {inventory} from "./inventory.js";
 
 
-
 function Test() {
     //const test = inventory[0].name;
     const items = [];
