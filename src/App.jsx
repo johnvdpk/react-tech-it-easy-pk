@@ -7,11 +7,38 @@ import AboutToSell from "./helpers/AboutToSell.js";
 import NameProduct from "./helpers/NameProduct.js";
 import Price from "./helpers/Price.js";
 import {ScreenSizes} from "./helpers/Screen.js";
-import {bestSellingTv} from "./constants/inventory.js";
-import Test from "./constants/practice.js";
-import Testb from "./constants/practice2.js";
+import {bestSellingTv, inventory} from "./constants/inventory.js";
+
+
 
 function App() {
+
+    function sortBestSellers() {
+        inventory.sort((a, b) => {
+            return a.sold - b.sold;
+        });
+
+        console.log(inventory);
+    }
+
+    function sortCheapest() {
+        inventory.sort((a, b) => {
+            return a.price - b.price;
+        });
+
+        console.log(inventory);
+    }
+
+    function sortSport() {
+        inventory.sort((a, b) => {
+            return a.refreshRate - b.refreshRate;
+        });
+
+        console.log(inventory);
+    }
+
+
+
     return (
 
     <div className="ipvbody">
@@ -45,16 +72,19 @@ function App() {
                 </div>
             </div>
 
-            <button onClick={() => console.log('Geklikt op meest verkocht')}>Meest verkocht eerst</button>
-            <button onClick={() => console.log('Geklikt op goekoopste eerst!')}>Goedkoopste eerst</button>
-            <button onClick={() => console.log('Geklikt op geschikt voor sport')}>Meest geschikt voor sport eerst</button>
+            <section>
+            <h3>Alle tvs</h3>
 
-            <p>alle tvs</p>
+            <button type="button" onClick={sortBestSellers}>Meest verkocht eerst</button>
+            <button type="button" onClick={sortCheapest}>Goedkoopste eerst</button>
+            <button type="button" onClick={sortSport}>Meest geschikt voor sport eerst</button>
 
-            <div className="opsomming">
-
-
-            </div>
+                {inventory.map((tv)=>
+                    <article className="product" key={tv.type}>
+                        {/* Voeg hier de inhoud van je product toe */}
+                    </article>
+                )}
+            </section>
 
 
         </div>
