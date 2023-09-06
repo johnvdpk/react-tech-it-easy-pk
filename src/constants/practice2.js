@@ -1,18 +1,20 @@
-import {inventory} from "./inventory.js";
-
-
+import { inventory } from "./inventory.js";
 
 function Testb() {
 
-const test = inventory.find(tv => tv.price);
+    const soldOutTVs = [];
 
-for (let i = 0; i <= test; i ++) {
-    const b = inventory.map[i];
-    test.push(b)
-}
+    for (let i = 0; i < inventory.length; i++) {
+        const sold = inventory[i].sold;
+        const stock = inventory[i].originalStock;
 
-return test;
+        if (sold === stock) {
+            soldOutTVs.push(inventory[i]);
+        }
+    }
 
+
+    return soldOutTVs;
 }
 
 export default Testb;

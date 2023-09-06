@@ -50,12 +50,8 @@ function App() {
             <button onClick={() => console.log('Geklikt op geschikt voor sport')}>Meest geschikt voor sport eerst</button>
 
             <p>alle tvs</p>
-            <p>{Test()}</p>
-            <p></p>
-            <p>{Testb()}</p>
+
             <div className="opsomming">
-
-
 
 
             </div>

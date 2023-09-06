@@ -328,6 +328,28 @@ export let inventory = [
     },
 ];
 
+//  opdracht 1A
+
+// Eerst in een eigen forloop
+//const forloopProductTypes = [];
+//for (let i = 0; i < inventory.length; i ++) {
+//    const item = inventory[i].type
+//    forloopProductTypes.push(item)
+//}
+//console.log(forloopProductTypes)
+
+const productTypes = inventory.map((tvs) => {
+
+   return tvs.type;
+});
+
+console.log(productTypes);
+
+//  opdracht 1A
+
+
+
+
 
 
 
